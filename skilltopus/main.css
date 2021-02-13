@@ -1,0 +1,96 @@
+body {
+    background-color: #99e9ff;
+    font-family: 'Courier New', monospace;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.head {
+    position: absolute;
+}
+
+img {
+    border: 3px solid #223b4d;
+    position:absolute;
+    top:0px;
+    left:558px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    padding-left: 19.5%;
+    padding-right: 20%;
+}
+
+.legs{
+    position: absolute;
+}
+
+.tentacle {
+    background: #708899;
+    color: whitesmoke;
+    padding: 2px;
+    margin-bottom: 1em;
+    margin-left: auto;
+    text-align:right;
+    width: 100%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.octopus {
+    position: relative;
+}
+
+
+/*всё ниже было честным образом подсмотрено на https://tilemill-project.github.io/tilemill/docs/guides/advanced-legends/ 
+ */
+
+.legend{
+    position: absolute;
+    top: 60%;
+    margin-left: 25%
+}
+
+.legend .legend-scale ul{
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+}
+
+.legend .legend-scale ul li {
+    font-size: 120%;
+    font-weight: 700;
+    list-style: none;
+    margin-left: 0;
+    line-height: 40px;
+    margin-bottom: 2px;
+}
+
+.legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
