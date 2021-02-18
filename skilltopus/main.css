@@ -154,22 +154,23 @@ img {
         margin-right: 1em;
         width: 250px;
         border-radius: 20px 20px 20px 20px;
+        justify-content: flex-start;
     }
 
-    .tentacle__current {
-        border-radius: 0px 20px 20px 0px;
+    .tentacle__future {
+        border-radius: 20px 0px 0px 20px;
     }
 
     .tentacle__title {
         color: white;
-        margin-top: 4%;
-        margin-right: 4%;
+        margin-top: 5%;
+        margin-left: 10px;
         font-size: 80%;
     }
 
     .octopus__legend {
         top: 470px;
         width: 320px;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
