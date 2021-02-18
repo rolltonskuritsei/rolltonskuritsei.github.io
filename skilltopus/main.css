@@ -54,6 +54,12 @@ img {
     height: 100%;
 }
 
+.tentacle__percent {
+    font-size: 70%;
+    color: white;
+    margin-left: 8px;
+}
+
 .ten {
     width: 10%;
 }
