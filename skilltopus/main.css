@@ -134,7 +134,7 @@ img {
 /*Media Query
  */
 
-@media (max-width: 420px) {
+@media (max-width: 768px) {
     .header {
         font-size: 70%;
         height: 50px;
@@ -154,10 +154,10 @@ img {
         margin-right: 1em;
         width: 250px;
         border-radius: 20px 20px 20px 20px;
-        justify-content: flex-start;
+        flex-direction: row-reverse;
     }
 
-    .tentacle__future {
+    .tentacle__current {
         border-radius: 20px 0px 0px 20px;
     }
 
