@@ -57,7 +57,7 @@ img {
 .tentacle__percent {
     font-size: 70%;
     color: white;
-    margin-left: 8px;
+    margin-left: 4px;
 }
 
 .ten {
@@ -159,12 +159,12 @@ img {
         margin-left: 2em;
         margin-right: 1em;
         width: 250px;
-        border-radius: 20px 20px 20px 20px;
+        border-radius: 15px 15px 15px 15px;
         flex-direction: row-reverse;
     }
 
     .tentacle__current {
-        border-radius: 20px 0px 0px 20px;
+        border-radius: 15px 0px 0px 15px;
     }
 
     .tentacle__title {
