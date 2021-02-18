@@ -7,57 +7,77 @@
     <title>Octopus</title>
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
-    
+
 <body>
-    <h1>Осьминожка Алексея</h1>
     <div class="box">
-        
-        <div class="legend">
-            <div class="legend-scale">
-                <ul class="legend-labels">
-                    <li><span style='background:#223b4d;'></span>текущий уровень</li>
-                    <li><span style='background:#3d6d8f;'></span>уровень через год</li>
-                    <li><span style='background:#708899;'></span>максимальный уровень</li>
-                </ul>
-            </div>
-        </div>
-        
+
         <div class="octopus">
 
-            <div class="head">
-                <img src="head.png"  height = "400" alt="head">
+            <div class="header">
+                <h1>Осьминожка навыков Алексея</h1>
             </div>
-            
-            
-        <div class="legs">
 
-            <div class="tentacle"  style="width: 555px; background: linear-gradient(to left, #223b4d 0, #223b4d 33.333%, #3d6d8f 33.333%, #3d6d8f 70%, #708899 70%, #708899 100%)">
-                <p>HTML</p>
+            <div class="octopus__head">
+                <img src="head.png" width="450" alt="head">
             </div>
-                
-            <div class="tentacle" style="width: 100%; background: linear-gradient(to left, #223b4d 0, #223b4d 10%, #3d6d8f 10%, #3d6d8f 66%, #708899 66%, #708899 100%)">
-                <p>CSS</p>
-            </div>
-                
-            <div class="tentacle"  style="width: 100%;background: linear-gradient(to left, #223b4d 0, #223b4d 60%, #3d6d8f 60%, #3d6d8f 70%, #708899 70%, #708899 100%)">
-                <p>Английский язык</p>
-            </div>
-                
-            <div class="tentacle"  style="width: 100%;background: linear-gradient(to left, #223b4d 0, #223b4d 35%, #3d6d8f 35%, #3d6d8f 60%, #708899 60%, #708899 100%)">
-                <p>Софт скиллы</p>
-            </div>
-                
-            <div class="tentacle"  style="width: 100%;background: linear-gradient(to left, #223b4d 0, #223b4d 60%, #3d6d8f 60%, #3d6d8f 70%, #708899 70%, #708899 100%)">
-                <p>Умение гуглить и ctrl+c ctrl+v</p>
-            </div>
-                
-            <div class="tentacle"  style="width: 100%; background:linear-gradient(to left, #3d6d8f 0%, #3d6d8f 100%)">
-                <p>Новый навык(в будущем)</p>
-            </div>
-                
-        </div> 
-            
 
+            <div class="octopus__tentacle">
+                <div class="tentacle">
+                    <div class="tentacle__future fourty">
+                    </div>
+                    <div class="tentacle__current twenty"></div>
+                    <span class="tentacle__title">HTML</span>
+                </div>
+
+                <div class="tentacle">
+                    <div class="tentacle__future fifty">
+                    </div>
+                    <div class="tentacle__current ten"></div>
+                    <span class="tentacle__title">CSS</span>
+                </div>
+
+                <div class="tentacle">
+                    <div class="tentacle__future ten">
+                    </div>
+                    <div class="tentacle__current sixty"></div>
+                    <span class="tentacle__title">Английский Язык</span>
+                </div>
+
+                <div class="tentacle">
+                    <div class="tentacle__future twenty">
+                    </div>
+                    <div class="tentacle__current fourty"></div>
+                    <span class="tentacle__title">Софт скиллы</span>
+                </div>
+
+                <div class="tentacle">
+                    <div class="tentacle__future ten">
+                    </div>
+                    <div class="tentacle__current sixty"></div>
+                    <span class="tentacle__title">Умение гуглить и ctrl+c ctrl+v</span>
+                </div>
+
+                <div class="tentacle">
+                    <span class="tentacle__title">Новый навык (в будущем)</span>
+                </div>
+            </div>
+
+            <div class="octopus__legend">
+                <div class="legend__item">
+                    <div class="legend__color"></div>
+                    <div class="legend__title"> - Максимальный уровень навыка</div>
+                </div>
+                <div class="legend__item">
+                    <div class="legend__color color__future"></div>
+                    <div class="legend__title"> - Через год</div>
+                </div>
+                <div class="legend__item">
+                    <div class="legend__color color__current"></div>
+                    <div class="legend__title"> - Сейчас</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
+</html>
