@@ -1,96 +1,175 @@
 body {
     background-color: #99e9ff;
-    font-family: 'Courier New', monospace;
     display: block;
+    font-family: 'Courier New', monospace;
 }
 
-h1 {
+.header {
+    width: 100%;
+    height: 100px;
     text-align: center;
-    color: black;
 }
 
-.head {
+.octopus__head {
     position: absolute;
 }
 
 img {
     border: 3px solid #223b4d;
-    position:absolute;
-    top:0px;
-    left:558px;
+    position: absolute;
+    top: 0px;
+    left: 450px;
 }
 
 .box {
-    display: flex;
-    align-items: center;
-    padding-left: 19.5%;
-    padding-right: 20%;
+    width: 900px;
+    margin: auto;
 }
 
-.legs{
+/*Tentacle style
+*/
+
+.octopus__tentacle {
     position: absolute;
 }
 
 .tentacle {
     background: #708899;
-    color: whitesmoke;
-    padding: 2px;
     margin-bottom: 1em;
     margin-left: auto;
-    text-align:right;
-    width: 100%;
+    width: 450px;
     border-radius: 20px 0px 0px 20px;
+    height: 45px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.octopus {
-    position: relative;
+.tentacle__future {
+    background-color: #3d6d8f;
+    height: 100%;
 }
 
+.tentacle__current {
+    background-color: #223b4d;
+    height: 100%;
+}
 
-/*всё ниже было честным образом подсмотрено на https://tilemill-project.github.io/tilemill/docs/guides/advanced-legends/ 
+.ten {
+    width: 10%;
+}
+
+.twenty {
+    width: 20%;
+}
+
+.thirty {
+    width: 30%;
+}
+
+.fourty {
+    width: 40%;
+}
+
+.fifty {
+    width: 50%;
+}
+
+.sixty {
+    width: 60%;
+}
+
+.seventy {
+    width: 70%;
+}
+
+.hundred {
+    width: 100%;
+}
+
+.tentacle__title {
+    position: absolute;
+    margin-top: 2%;
+    color: white;
+}
+
+/*Legend style
+*/
+
+.octopus__legend {
+    width: 900px;
+    position: absolute;
+    top: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.legend__item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+    margin-right: 10px;
+}
+
+.legend__color {
+    width: 20px;
+    height: 15px;
+    margin-right: 5px;
+    background-color: #708899;
+}
+
+.legend__title {
+    font-size: 105%;
+    font-weight: 600;
+}
+
+.color__current {
+    background-color: #223b4d;
+}
+
+.color__future {
+    background-color: #3d6d8f;
+}
+
+/*Media Query
  */
 
-.legend{
-    position: absolute;
-    top: 70%;
-    margin-left: 25%
-}
-
-.legend .legend-scale ul{
-    margin: 0;
-    margin-bottom: 5px;
-    padding: 0;
-    float: left;
-    list-style: none;
-}
-
-.legend .legend-scale ul li {
-    font-size: 120%;
-    font-weight: 700;
-    list-style: none;
-    margin-left: 0;
-    line-height: 40px;
-    margin-bottom: 2px;
-}
-
-.legend ul.legend-labels li span {
-    display: block;
-    float: left;
-    height: 30px;
-    width: 30px;
-    margin-right: 5px;
-    margin-left: 0;
-    border: 1px solid #999;
+@media (max-width: 420px) {
+    .header {
+        font-size: 70%;
+        height: 50px;
+        margin-bottom: 20px;
     }
 
+    .box {
+        width: 320px;
+    }
 
+    .octopus__head {
+        display: none;
+    }
 
+    .tentacle {
+        margin-left: 2em;
+        margin-right: 1em;
+        width: 250px;
+        border-radius: 20px 20px 20px 20px;
+    }
 
+    .tentacle__current {
+        border-radius: 0px 20px 20px 0px;
+    }
 
+    .tentacle__title {
+        color: white;
+        margin-top: 4%;
+        margin-right: 4%;
+        font-size: 80%;
+    }
 
-
-
-
-
-
-
+    .octopus__legend {
+        top: 470px;
+        width: 320px;
+        flex-direction: column;
+    }
+}
