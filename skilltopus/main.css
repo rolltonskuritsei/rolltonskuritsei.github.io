@@ -11,7 +11,7 @@ body {
 }
 
 .octopus__head {
-    position: absolute;
+    position: relative;
 }
 
 img {
@@ -30,13 +30,12 @@ img {
 */
 
 .octopus__tentacle {
-    position: absolute;
+    position: relative;
 }
 
 .tentacle {
     background: #708899;
     margin-bottom: 1em;
-    margin-left: auto;
     width: 450px;
     border-radius: 20px 0px 0px 20px;
     height: 45px;
@@ -54,48 +53,52 @@ img {
     height: 100%;
 }
 
-.tentacle__percent {
+.tentacle__legend {
     font-size: 70%;
     color: white;
     margin-left: 4px;
 }
 
-.ten {
+.percent--ten {
     width: 10%;
 }
 
-.twenty {
+.percent--twenty {
     width: 20%;
 }
 
-.thirty {
+.percent--thirty {
     width: 30%;
 }
 
-.fourty {
+.percent--fourty {
     width: 40%;
 }
 
-.fifty {
+.percent--fifty {
     width: 50%;
 }
 
-.sixty {
+.percent--sixty {
     width: 60%;
 }
 
-.seventy {
+.percent--seventy {
     width: 70%;
 }
 
-.hundred {
+.percent--hundred {
     width: 100%;
 }
 
 .tentacle__title {
     position: absolute;
-    margin-top: 3%;
+    margin-top: 1%;
     color: white;
+}
+
+.hidden-legend {
+    display: none;
 }
 
 /*Legend style
@@ -103,11 +106,11 @@ img {
 
 .octopus__legend {
     width: 900px;
-    position: absolute;
-    top: 500px;
+    position: relative;
+    top: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-evenly
 }
 
 .legend__item {
@@ -175,7 +178,6 @@ img {
     }
 
     .octopus__legend {
-        top: 470px;
         width: 320px;
         flex-direction: column-reverse;
     }
